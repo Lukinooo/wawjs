@@ -76,7 +76,7 @@ describe("bom.js tests", function() {
         })
   });
 
-  it("BOM removed wit size 2 of chunks", function(done) {
+  it("BOM removed with size 2 of chunks", function(done) {
     const chunks = []
     let file = `${__dirname}/data/without-bom.txt`;
     //content of the file is: // with
@@ -89,7 +89,7 @@ describe("bom.js tests", function() {
           chunks.push(chunk)
         })
         .on('finish', () => {
-          const chunk =Buffer.concat(chunks)
+          const chunk = Buffer.concat(chunks)
           assert(Buffer.isBuffer(chunk));
           // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
@@ -102,7 +102,7 @@ describe("bom.js tests", function() {
         })
   });
 
-  it("BOM removed wit size 1 of chunks", function(done) {
+  it("BOM removed with size 1 of chunks", function(done) {
     const chunks = []
     let file = `${__dirname}/data/without-bom.txt`;
     //content of the file is: // with
@@ -115,7 +115,7 @@ describe("bom.js tests", function() {
           chunks.push(chunk)
         })
         .on('finish', () => {
-          const chunk =Buffer.concat(chunks)
+          const chunk = Buffer.concat(chunks)
           assert(Buffer.isBuffer(chunk));
           // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
