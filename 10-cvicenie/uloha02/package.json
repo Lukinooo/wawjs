@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/bom/bom.spec.0.1.0.js"
+    "test": "mocha test/bom/"
   },
   "keywords": [],
   "author": "",
