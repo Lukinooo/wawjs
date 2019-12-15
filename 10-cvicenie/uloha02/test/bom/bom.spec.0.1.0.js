@@ -2,7 +2,7 @@ const bom = require("../../src/bom/");
 const assert = require("assert");
 const fs = require("fs");
 
-console.log(bom.remove)
+// console.log(bom.remove)
 
 describe("bom.js tests", function() {
 
@@ -41,7 +41,7 @@ describe("bom.js tests", function() {
         .once("data", (chunk) => {
 
           assert(Buffer.isBuffer(chunk));
-          console.log(chunk)
+          // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
           //          /  /     w  i  t  h 
           const expected = Buffer.from([
@@ -65,7 +65,7 @@ describe("bom.js tests", function() {
         .once("data", (chunk) => {
 
           assert(Buffer.isBuffer(chunk));
-          console.log(chunk)
+          // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
           //          /  /     w  i  t  h 
           const expected = Buffer.from([
@@ -91,7 +91,7 @@ describe("bom.js tests", function() {
         .on('finish', () => {
           const chunk =Buffer.concat(chunks)
           assert(Buffer.isBuffer(chunk));
-          console.log(chunk)
+          // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
           //          /  /     w  i  t  h 
           const expected = Buffer.from([
@@ -117,7 +117,7 @@ describe("bom.js tests", function() {
         .on('finish', () => {
           const chunk =Buffer.concat(chunks)
           assert(Buffer.isBuffer(chunk));
-          console.log(chunk)
+          // console.log(chunk)
           // ef bb bf 2f 2f 20 77 69 74 68
           //          /  /     w  i  t  h 
           const expected = Buffer.from([
